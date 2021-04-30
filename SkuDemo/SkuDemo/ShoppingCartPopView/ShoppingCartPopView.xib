@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShoppingCartPopView">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="521"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brm-Xd-WoH">
+                    <rect key="frame" x="0.0" y="0.0" width="469" height="521"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8y-09-VYM">
+                    <rect key="frame" x="0.0" y="65" width="469" height="456"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHi-R8-cRr">
+                            <rect key="frame" x="435" y="13" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="del-h6-gV2">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="height" constant="20" id="lbJ-Uf-aYj">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <state key="normal" image="icon_back"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nv4-aK-5Yc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pb-wY-ikz">
+                            <rect key="frame" x="136" y="11" width="267" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="GIA-uc-4D2">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A78-0x-rMX">
+                            <rect key="frame" x="16" y="-21" width="104" height="104"/>
+                            <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="104" id="lRJ-I9-ang">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="width" constant="104" id="vXH-7b-ERW">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx4-8C-wJT">
+                            <rect key="frame" x="397" y="63" width="58" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="GaT-Oc-oiM">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="58" id="gL5-bz-AFp">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utH-Eu-JWf">
+                            <rect key="frame" x="136" y="58" width="62" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="oDw-Qb-b0p">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="height" constant="25" id="w31-ML-lWE">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.28627450980000002" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8S-Fu-gN7">
+                            <rect key="frame" x="0.0" y="392" width="469" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMN-oj-enC">
+                                    <rect key="frame" x="16" y="10" width="437" height="44"/>
+                                    <color key="backgroundColor" red="0.62745098040000002" green="0.75686274509999996" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sureAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="g6L-tT-e0H"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="4bx-ja-XSK">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="bottom" secondItem="dMN-oj-enC" secondAttribute="bottom" constant="10" id="Cah-ZG-1i0">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstItem="dMN-oj-enC" firstAttribute="leading" secondItem="N8S-Fu-gN7" secondAttribute="leading" constant="16" id="EDx-iz-oZZ">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstItem="dMN-oj-enC" firstAttribute="top" secondItem="N8S-Fu-gN7" secondAttribute="top" constant="10" id="jxf-iu-tRw">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="dMN-oj-enC" secondAttribute="trailing" constant="16" id="vWd-Fe-hQc">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dg-a5-RFz">
+                            <rect key="frame" x="16" y="350" width="56" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="HEm-c7-pEK">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="kvH-sz-Zzm">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzA-QU-UOo">
+                            <rect key="frame" x="339" y="349" width="110" height="26"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zIG-wO-wCu">
+                                    <rect key="frame" x="30" y="0.0" width="50" height="26"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="uDb-49-WYb"/>
+                                    </constraints>
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezn-6d-Qkr">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="-">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cutBuyGoodsCountAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="S8t-IV-Spq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ur-FC-zk1">
+                                    <rect key="frame" x="80" y="0.0" width="30" height="26"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                    <state key="normal" title="+">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addBuyGoodsCountAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="f4Z-N6-470"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPN-1j-8R3">
+                                    <rect key="frame" x="29" y="0.0" width="1" height="26"/>
+                                    <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="48m-EC-wKk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7L-he-sRx">
+                                    <rect key="frame" x="80" y="0.0" width="1" height="26"/>
+                                    <color key="backgroundColor" red="0.83529411760000005" green="0.83529411760000005" blue="0.83529411760000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="9rH-Lm-MeD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="a7L-he-sRx" secondAttribute="bottom" id="0vQ-JM-Xhz"/>
+                                <constraint firstItem="a7L-he-sRx" firstAttribute="leading" secondItem="zIG-wO-wCu" secondAttribute="trailing" id="5vh-hd-xM0"/>
+                                <constraint firstAttribute="width" constant="110" id="BG6-ar-bl7">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstItem="1Ur-FC-zk1" firstAttribute="leading" secondItem="zIG-wO-wCu" secondAttribute="trailing" id="FWI-3E-ttC"/>
+                                <constraint firstItem="1Ur-FC-zk1" firstAttribute="top" secondItem="LzA-QU-UOo" secondAttribute="top" id="N1Q-Ed-3FJ"/>
+                                <constraint firstItem="zIG-wO-wCu" firstAttribute="centerX" secondItem="LzA-QU-UOo" secondAttribute="centerX" id="R3r-yq-35P"/>
+                                <constraint firstItem="zIG-wO-wCu" firstAttribute="leading" secondItem="Ezn-6d-Qkr" secondAttribute="trailing" id="Rx9-4s-LXK"/>
+                                <constraint firstItem="bPN-1j-8R3" firstAttribute="top" secondItem="LzA-QU-UOo" secondAttribute="top" id="Vr6-5b-ZTu"/>
+                                <constraint firstItem="Ezn-6d-Qkr" firstAttribute="top" secondItem="LzA-QU-UOo" secondAttribute="top" id="XWs-yF-vja"/>
+                                <constraint firstItem="zIG-wO-wCu" firstAttribute="leading" secondItem="bPN-1j-8R3" secondAttribute="trailing" id="Zf6-pj-2s0"/>
+                                <constraint firstAttribute="height" constant="26" id="cpQ-Me-Gj8">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="1Ur-FC-zk1" secondAttribute="trailing" id="drT-Gp-Zkn"/>
+                                <constraint firstAttribute="bottom" secondItem="bPN-1j-8R3" secondAttribute="bottom" id="hqZ-UW-LBV"/>
+                                <constraint firstAttribute="bottom" secondItem="Ezn-6d-Qkr" secondAttribute="bottom" id="k5j-pm-P62"/>
+                                <constraint firstItem="Ezn-6d-Qkr" firstAttribute="leading" secondItem="LzA-QU-UOo" secondAttribute="leading" id="mrv-WK-XPp"/>
+                                <constraint firstAttribute="bottom" secondItem="zIG-wO-wCu" secondAttribute="bottom" id="oDu-vS-Yjq"/>
+                                <constraint firstAttribute="bottom" secondItem="1Ur-FC-zk1" secondAttribute="bottom" id="oFq-xZ-9Ww"/>
+                                <constraint firstItem="a7L-he-sRx" firstAttribute="top" secondItem="LzA-QU-UOo" secondAttribute="top" id="pYw-gC-iFS"/>
+                                <constraint firstItem="zIG-wO-wCu" firstAttribute="top" secondItem="LzA-QU-UOo" secondAttribute="top" id="qYk-RF-B9S"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ci5-F4-ttP">
+                            <rect key="frame" x="0.0" y="118" width="469" height="216"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xzv-Wj-2zX">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="9N3-Nn-b6I"/>
+                                <outlet property="delegate" destination="-1" id="pUc-Ik-ReB"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hx4-8C-wJT" firstAttribute="top" secondItem="7pb-wY-ikz" secondAttribute="bottom" constant="18" id="7ga-4c-vzr">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="LzA-QU-UOo" firstAttribute="top" secondItem="ci5-F4-ttP" secondAttribute="bottom" constant="15" id="9Mg-aa-eB0">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="N8S-Fu-gN7" secondAttribute="trailing" id="9ru-ip-T37"/>
+                        <constraint firstItem="A78-0x-rMX" firstAttribute="top" secondItem="e8y-09-VYM" secondAttribute="top" constant="-21" id="BiH-tv-hNW">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="utH-Eu-JWf" firstAttribute="leading" secondItem="A78-0x-rMX" secondAttribute="trailing" constant="16" id="Iaa-Z3-3WZ">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="LzA-QU-UOo" secondAttribute="trailing" constant="20" id="KNi-yf-S7C">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="jHi-R8-cRr" firstAttribute="leading" secondItem="7pb-wY-ikz" secondAttribute="trailing" constant="32" id="L0u-yH-0dU">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="N8S-Fu-gN7" secondAttribute="bottom" id="Lmw-KR-XLT"/>
+                        <constraint firstAttribute="trailing" secondItem="jHi-R8-cRr" secondAttribute="trailing" constant="14" id="N7G-Dd-Y9R">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="N8S-Fu-gN7" firstAttribute="top" secondItem="LzA-QU-UOo" secondAttribute="bottom" constant="17" id="PwG-tf-ety">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="A78-0x-rMX" firstAttribute="leading" secondItem="e8y-09-VYM" secondAttribute="leading" constant="16" id="Rqi-Cs-MsT">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="1dg-a5-RFz" firstAttribute="leading" secondItem="e8y-09-VYM" secondAttribute="leading" constant="16" id="TJB-KS-eVE">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="hx4-8C-wJT" secondAttribute="trailing" constant="14" id="bil-cz-GGD">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="456" id="cgk-dr-A7N"/>
+                        <constraint firstItem="ci5-F4-ttP" firstAttribute="top" secondItem="A78-0x-rMX" secondAttribute="bottom" constant="35" id="fTK-Zy-PqA">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="utH-Eu-JWf" firstAttribute="top" secondItem="7pb-wY-ikz" secondAttribute="bottom" constant="13" id="g9w-rS-myt">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="jHi-R8-cRr" firstAttribute="top" secondItem="e8y-09-VYM" secondAttribute="top" constant="13" id="hTD-lP-fbR">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="7pb-wY-ikz" firstAttribute="top" secondItem="e8y-09-VYM" secondAttribute="top" constant="11" id="iQ5-s3-SAt">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="N8S-Fu-gN7" firstAttribute="leading" secondItem="e8y-09-VYM" secondAttribute="leading" id="nc4-IE-Eub"/>
+                        <constraint firstAttribute="trailing" secondItem="ci5-F4-ttP" secondAttribute="trailing" id="nvN-Tf-bEg"/>
+                        <constraint firstItem="N8S-Fu-gN7" firstAttribute="top" secondItem="1dg-a5-RFz" secondAttribute="bottom" constant="22" id="obh-H3-ad4">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="7pb-wY-ikz" firstAttribute="leading" secondItem="A78-0x-rMX" secondAttribute="trailing" constant="16" id="pG2-pB-kVk">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstItem="ci5-F4-ttP" firstAttribute="leading" secondItem="e8y-09-VYM" secondAttribute="leading" id="zrj-UM-cuY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="e8y-09-VYM" secondAttribute="bottom" id="8dW-Wv-KCM"/>
+                <constraint firstItem="brm-Xd-WoH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="I9M-Vn-DOV"/>
+                <constraint firstItem="brm-Xd-WoH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cgz-KS-el6"/>
+                <constraint firstItem="e8y-09-VYM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qug-tX-H8m"/>
+                <constraint firstAttribute="bottom" secondItem="brm-Xd-WoH" secondAttribute="bottom" id="sOE-8p-LVZ"/>
+                <constraint firstItem="e8y-09-VYM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sja-2d-46a"/>
+                <constraint firstItem="brm-Xd-WoH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="yhK-oP-Rt3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backView" destination="brm-Xd-WoH" id="4OE-MO-PTh"/>
+                <outlet property="baseCollect" destination="ci5-F4-ttP" id="wuY-58-c8f"/>
+                <outlet property="buyCountAddBtn" destination="1Ur-FC-zk1" id="ik6-WH-1mU"/>
+                <outlet property="buyCountCancelBtn" destination="Ezn-6d-Qkr" id="jaL-jv-cQT"/>
+                <outlet property="buyCountTextField" destination="zIG-wO-wCu" id="ofN-6M-B42"/>
+                <outlet property="buyCountTipLb" destination="1dg-a5-RFz" id="eOn-tH-aC0"/>
+                <outlet property="buyCountView" destination="LzA-QU-UOo" id="DEi-6R-aqS"/>
+                <outlet property="cancelBtn" destination="jHi-R8-cRr" id="1K8-gC-B3Y"/>
+                <outlet property="goodsImg" destination="A78-0x-rMX" id="haQ-aE-wls"/>
+                <outlet property="goodsPriceLb" destination="utH-Eu-JWf" id="EzH-c3-Bw5"/>
+                <outlet property="goodsStoreCountLb" destination="hx4-8C-wJT" id="UVM-Sn-LQX"/>
+                <outlet property="goodsTitleLb" destination="7pb-wY-ikz" id="o41-ji-oSv"/>
+                <outlet property="sureBtn" destination="dMN-oj-enC" id="a1u-ah-a2g"/>
+            </connections>
+            <point key="canvasLocation" x="180.43478260869566" y="203.90625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_back" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,41 @@
+[
+    {
+  "skuName" : "Platform",
+  "goodsSkuItemVOS" : [
+    {
+      "id" : 34,
+      "item" : "11"
+    },
+    {
+      "id" : 35,
+      "item" : "12"
+    }
+  ]
+},
+{
+  "skuName" : "长度度度",
+  "goodsSkuItemVOS" : [
+    {
+      "id" : 61,
+      "item" : "7"
+    },
+    {
+      "id" : 62,
+      "item" : "8"
+    }
+  ]
+},
+{
+  "skuName" : "型型号号",
+  "goodsSkuItemVOS" : [
+    {
+      "id" : 66,
+      "item" : "FX"
+    },
+    {
+      "id" : 67,
+      "item" : "SW"
+    }
+  ]
+}
+]

@@ -1,0 +1,77 @@
+//
+//  PrefixHeader.pch
+//  SkuDemo
+//
+//  Created by King Ser on 2021/4/29.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+//导入第三方库
+#import "UIColor+Hex.h"
+
+// 只要添加了这个宏，就不用带mas_前缀
+#define MAS_SHORTHAND
+// 只要添加了这个宏，equalTo就等价于mas_equalTo
+#define MAS_SHORTHAND_GLOBALS
+// 这个头文件一定要放在上面两个宏的后面
+#import "Masonry.h"
+#import "UIImageView+WebCache.h"
+
+
+#import "ShoppingCartPopView.h"
+
+#endif
+
+
+#define  SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
+#define  SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+#define FONT_Bold_35   [UIFont fontWithName:@"Helvetica-Bold" size:35]
+#define FONT_Bold_30   [UIFont fontWithName:@"Helvetica-Bold" size:30]
+#define FONT_Bold_26   [UIFont fontWithName:@"Helvetica-Bold" size:26]
+#define FONT_Bold_24   [UIFont fontWithName:@"Helvetica-Bold" size:24]
+#define FONT_Bold_22   [UIFont fontWithName:@"Helvetica-Bold" size:22]
+#define FONT_Bold_20   [UIFont fontWithName:@"Helvetica-Bold" size:20]
+#define FONT_Bold_19   [UIFont fontWithName:@"Helvetica-Bold" size:19]
+#define FONT_Bold_18   [UIFont fontWithName:@"Helvetica-Bold" size:18]
+#define FONT_Bold_17   [UIFont fontWithName:@"Helvetica-Bold" size:17]
+#define FONT_Bold_16   [UIFont fontWithName:@"Helvetica-Bold" size:16]
+#define FONT_Bold_14   [UIFont fontWithName:@"Helvetica-Bold" size:14]
+#define FONT_Bold_15   [UIFont fontWithName:@"Helvetica-Bold" size:15]
+#define FONT_Bold_13   [UIFont fontWithName:@"Helvetica-Bold" size:13]
+#define FONT_Bold_12   [UIFont fontWithName:@"Helvetica-Bold" size:12]
+#define FONT_Bold_10   [UIFont fontWithName:@"Helvetica-Bold" size:10]
+
+
+#define FONT_30 [UIFont systemFontOfSize:30*sizeScale]
+#define FONT_25 [UIFont systemFontOfSize:25*sizeScale]
+#define FONT_24 [UIFont systemFontOfSize:24*sizeScale]
+#define FONT_20 [UIFont systemFontOfSize:20*sizeScale]
+#define FONT_18 [UIFont systemFontOfSize:18*sizeScale]
+#define FONT_16 [UIFont systemFontOfSize:16*sizeScale]
+#define FONT_15 [UIFont systemFontOfSize:15*sizeScale]
+#define FONT_14 [UIFont systemFontOfSize:14*sizeScale]
+#define FONT_13 [UIFont systemFontOfSize:13*sizeScale]
+#define FONT_12 [UIFont systemFontOfSize:12*sizeScale]
+#define FONT_11 [UIFont systemFontOfSize:11*sizeScale]
+#define FONT_10 [UIFont systemFontOfSize:10*sizeScale]
+#define FONT_9 [UIFont systemFontOfSize:9*sizeScale]
+#define FONT_8 [UIFont systemFontOfSize:8*sizeScale]
+#define FONT_6 [UIFont systemFontOfSize:6*sizeScale]
+
+//适配比率
+#define  sizeScale  (double)SCREEN_WIDTH/375
+
+/***
+ *判断字符串是否为空 返回是否为空 是 字符串为空值 否 字符串不是空值
+ ***/
+#define NULLString(string) ((![string isKindOfClass:[NSString class]])||[string isEqualToString:@""] || (string == nil) || [string isEqualToString:@""] || [string isKindOfClass:[NSNull class]]||[[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length]==0)
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
